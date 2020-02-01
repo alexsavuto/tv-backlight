@@ -56,7 +56,7 @@ struct State {
 
 WiFiClient wifiClient;
 PubSubClient mqtt(wifiClient);
-NeoPixelBus<NeoGrbFeature, NeoEsp8266Uart800KbpsMethod> strip(LEDCOUNT);
+NeoPixelBus<NeoGrbFeature, NeoEsp8266Uart1800KbpsMethod> strip(LEDCOUNT);
 
 void setup() {
     Serial.begin(BAUDRATE);
